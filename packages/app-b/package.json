@@ -1,0 +1,24 @@
+{
+  "name": "app-b",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "serve dist -p 3002",
+    "build": "webpack --mode production",
+    "dev": "concurrently 'webpack --watch' 'serve dist -p 3002'"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "esbuild-loader": "^2.13.1",
+    "html-webpack-plugin": "^5.3.2",
+    "serve": "^12.0.0",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
